@@ -1,0 +1,7 @@
+plyr = game.Players.LocalPlayer
+
+function rotatePointer()
+	if plyr.Character.Torso ~= nil then
+		script.Parent.Rotation = math.deg(-math.atan2(plyr.Character.Torso.CFrame.lookVector.X,plyr.Character.Torso.CFrame.lookVector.Z))
+	end
+end
